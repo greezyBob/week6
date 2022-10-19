@@ -13,10 +13,12 @@ namespace NorthwindData.Services
         {
             _context = new NorthwindContext();
         }
+
         public CustomerService(NorthwindContext context)
         {
             _context = context;
         }
+
         public void CreateCustomer(Customer c)
         {
             _context.Customers.Add(c);
